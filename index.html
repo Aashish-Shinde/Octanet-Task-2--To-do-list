@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Project Todo List</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Website Project Todo List</h1>
+
+    <div id="form">
+      <input type="text" id="taskInput" placeholder="Enter task">
+      <input type="text" id="deadlineInput" placeholder="Enter deadline">
+      <select id="prioritySelect">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <input type="text" id="labelInput" placeholder="Enter label">
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div id="taskList">
+      <h2>Tasks</h2>
+      <ul id="tasks"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
